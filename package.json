@@ -1,0 +1,7 @@
+{
+  "name": "kompels-website",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve Desktop/kompels -p 3000"
+  }
+}
