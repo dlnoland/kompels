@@ -1,0 +1,50 @@
+/* ============================================================
+   variables.css — Kompels Design Tokens
+   Alle kleuren, fonts en spacing op één plek.
+   Wijzig hier, werkt overal.
+   ============================================================ */
+
+:root {
+  /* Kleuren */
+  --moss:          #1E3A2F;
+  --moss-mid:      #2D5244;
+  --moss-light:    #3D6354;
+  --gold:          #A8813A;
+  --gold-light:    #C4A054;
+  --gold-pale:     #F0E6D0;
+  --sand:          #F6F1E9;
+  --sand-mid:      #EDE5D4;
+  --sand-dark:     #DDD3BC;
+  --cream:         #FDFAF5;
+  --white:         #FFFFFF;
+  --ink:           #1A1F1C;
+
+  /* Tekst */
+  --text:          #1A1F1C;
+  --text-mid:      #3D4D45;
+  --text-muted:    #6B7D74;
+  --text-light:    #96A89E;
+
+  /* Typografie */
+  --ff-display:    'Playfair Display', Georgia, serif;
+  --ff-body:       'DM Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-pad:   88px 48px;
+  --section-pad-sm: 64px 24px;
+  --max-width:     980px;
+
+  /* Borders */
+  --radius:        3px;
+  --radius-sm:     2px;
+
+  /* Transities */
+  --transition:    0.22s ease;
+}
+
+/* Responsive aanpassingen */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 64px 20px;
+  }
+}

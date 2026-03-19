@@ -1,0 +1,307 @@
+/* ============================================================
+   pages.css — Paginaspecifieke stijlen
+   ============================================================ */
+
+/* ── OVER ONS HERO ── */
+
+.oo-page-hero {
+  background: var(--moss);
+  padding: 88px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.oo-page-hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+.team-card-large {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: border-color var(--transition);
+}
+.team-card-large:hover { border-color: rgba(168,129,58,0.6); }
+.team-avatar-lg {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--gold-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-display);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--moss);
+  margin-bottom: 18px;
+}
+.team-avatar-lg.alt { background: rgba(255,255,255,0.15); color: var(--cream); }
+.team-card-large h3 {
+  font-family: var(--ff-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 16px;
+  display: block;
+}
+.team-card-large p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.75; margin-bottom: 10px; }
+.team-card-large a { font-size: 13px; color: var(--gold-light); display: block; margin-top: 4px; text-decoration: none; }
+.team-card-large a.dimmed { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 2px; }
+
+/* ── VALUES GRID ── */
+
+.value-card {
+  background: var(--cream);
+  border: 1px solid var(--sand-dark);
+  padding: 28px;
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+.value-card:hover { border-color: var(--gold); }
+.value-num {
+  font-family: var(--ff-display);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--sand-dark);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.value-card h3 {
+  font-family: var(--ff-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 10px;
+}
+.value-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+/* ── SCHOOLPROBLEEM LIJST ── */
+
+.school-prob { display: flex; flex-direction: column; gap: 12px; }
+.school-prob-item {
+  background: var(--white);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: border-color var(--transition);
+}
+.school-prob-item:hover { border-color: var(--gold); }
+.school-prob-num {
+  font-family: var(--ff-display);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gold);
+  flex-shrink: 0;
+  width: 28px;
+}
+.school-prob-item h3 {
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 4px;
+}
+.school-prob-item p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* ── PROGRAMMA KAARTEN ── */
+
+.programma-card {
+  background: var(--cream);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.programma-card:hover { border-color: var(--gold); }
+.programma-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.programma-card:hover::after { transform: scaleX(1); }
+.prog-tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: block;
+}
+.programma-card h3 {
+  font-family: var(--ff-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.programma-card p { font-size: 14px; color: var(--text-muted); line-height: 1.72; margin-bottom: 14px; }
+.prog-duration {
+  font-size: 12px;
+  color: var(--text-light);
+  border-top: 1px solid var(--sand-dark);
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+/* ── WORKSHOP KAARTEN ── */
+
+.ws-card {
+  background: var(--white);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.ws-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.ws-tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: block;
+}
+.ws-card h3 {
+  font-family: var(--ff-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.ws-card p { font-size: 14px; color: var(--text-muted); line-height: 1.72; margin-bottom: 14px; }
+.ws-meta {
+  font-size: 12px;
+  color: var(--text-light);
+  border-top: 1px solid var(--sand-dark);
+  padding-top: 12px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.ws-meta span::before {
+  content: '';
+  display: inline-block;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* ── CONTACT PAGINA ── */
+
+.contact-person {
+  background: var(--sand);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.contact-person-av {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--moss);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-display);
+  font-size: 16px;
+  color: var(--cream);
+  flex-shrink: 0;
+}
+.contact-person-av.alt { background: var(--moss-light); }
+.contact-person h4 {
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 3px;
+}
+.contact-person p { font-size: 13px; color: var(--text-muted); margin-bottom: 2px; line-height: 1.5; }
+.contact-person a { font-size: 12px; color: var(--gold); display: block; margin-top: 2px; text-decoration: none; }
+.contact-person a.dimmed { color: var(--text-light); font-size: 11px; }
+
+/* ── AANPAK INTRO BLOK ── */
+
+.aanpak-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 56px;
+  align-items: start;
+}
+.aanpak-quote {
+  font-family: var(--ff-display);
+  font-size: 21px;
+  font-style: italic;
+  color: var(--moss);
+  line-height: 1.5;
+  border-left: 3px solid var(--gold);
+  padding-left: 24px;
+}
+.aanpak-tekst p { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-bottom: 14px; }
+
+/* ── ORG CONTEXT STRIP ── */
+
+.org-context {
+  background: var(--sand);
+  padding: 56px 48px;
+  border-bottom: 1px solid var(--sand-dark);
+}
+.org-context-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.org-quote {
+  font-family: var(--ff-display);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--moss);
+  line-height: 1.5;
+  border-left: 3px solid var(--gold);
+  padding-left: 24px;
+}
+.org-context p { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-bottom: 12px; }
+
+/* ── RESPONSIVE PAGINA-SPECIFIEK ── */
+@media (max-width: 768px) {
+  .oo-page-hero { padding: 64px 20px; }
+  .oo-page-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .aanpak-intro { grid-template-columns: 1fr; gap: 28px; margin-bottom: 36px; }
+  .org-context { padding: 40px 20px; }
+  .org-context-inner { grid-template-columns: 1fr; gap: 24px; }
+}

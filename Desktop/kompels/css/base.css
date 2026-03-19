@@ -1,0 +1,111 @@
+/* ============================================================
+   base.css — Reset, body, typografie
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--ff-body);
+  background: var(--cream);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--ff-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ── Typografie schaal ── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-display);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--moss);
+}
+
+h1 { font-size: clamp(34px, 5vw, 58px); }
+h2 { font-size: clamp(26px, 3.5vw, 42px); }
+h3 { font-size: clamp(20px, 2.5vw, 26px); }
+h4 { font-size: 18px; font-family: var(--ff-body); font-weight: 500; }
+h5 { font-size: 14px; font-family: var(--ff-body); font-weight: 500; }
+
+h1 em, h2 em, h3 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+p {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.8;
+}
+
+strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ── Hulpklassen ── */
+
+.text-center { text-align: center; }
+.text-muted   { color: var(--text-muted); }
+.text-light   { color: var(--text-light); }
+
+.s-tag {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.s-lead {
+  font-size: 17px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+/* Scroll-animatie klasse (toegevoegd door ui.js) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
