@@ -612,7 +612,303 @@
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-note { font-size: 12px; color: var(--text-light); margin-top: 16px; line-height: 1.6; }
 
+/* ── TRUST STRIP ── */
+
+.trust-strip {
+  background: var(--sand);
+  padding: 28px 48px;
+  border-bottom: 1px solid var(--sand-dark);
+}
+.trust-strip-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.trust-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gold-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trust-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gold);
+}
+.trust-text {
+  display: flex;
+  flex-direction: column;
+}
+.trust-num {
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--moss);
+  line-height: 1.3;
+}
+.trust-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ── DOELGROEP KAARTEN ── */
+
+.doelgroep-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.doelgroep-card {
+  background: var(--cream);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 36px;
+  text-decoration: none;
+  display: block;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+.doelgroep-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(30,58,47,0.08);
+}
+.doelgroep-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gold-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.doelgroep-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--gold);
+}
+.doelgroep-tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  display: block;
+}
+.doelgroep-card h3 {
+  font-family: var(--ff-body);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.doelgroep-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.72;
+  margin-bottom: 16px;
+}
+.doelgroep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.doelgroep-list li {
+  font-size: 13px;
+  color: var(--text-mid);
+  padding-left: 16px;
+  position: relative;
+}
+.doelgroep-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.doelgroep-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition);
+}
+.doelgroep-card:hover .doelgroep-link {
+  color: var(--moss);
+}
+
+/* ── PROBLEEM CTA ── */
+
+.prob-cta {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--sand-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.prob-cta-text {
+  font-size: 15px;
+  color: var(--text-mid);
+  font-style: italic;
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+/* ── FASE RESULT ── */
+
+.fase-result {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 500;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--sand-dark);
+}
+
+/* ── AANPAK CTA ── */
+
+.aanpak-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ── TESTIMONIAL GRID ── */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  gap: 20px;
+}
+.testimonial-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: border-color var(--transition);
+}
+.testimonial-card:hover {
+  border-color: rgba(168,129,58,0.5);
+}
+.testimonial-card.featured {
+  grid-row: span 2;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-quote {
+  margin-bottom: 16px;
+}
+.testimonial-quote svg {
+  fill: var(--gold);
+  opacity: 0.5;
+}
+.testimonial-card blockquote {
+  font-family: var(--ff-display);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.testimonial-card.featured blockquote {
+  font-size: 18px;
+  flex-grow: 1;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(168,129,58,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-display);
+  font-size: 14px;
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+.testimonial-info cite {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--cream);
+  display: block;
+  margin-bottom: 2px;
+}
+.testimonial-info span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ── FAQ GRID ── */
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.faq-item {
+  background: var(--cream);
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: border-color var(--transition);
+}
+.faq-item:hover {
+  border-color: var(--gold);
+}
+.faq-item h3 {
+  font-family: var(--ff-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.faq-item p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.72;
+}
+
 /* ── RESPONSIVE COMPONENTEN ── */
+@media (max-width: 1024px) {
+  .trust-strip { padding: 24px 28px; }
+  .trust-strip-inner { gap: 20px; }
+  .testimonial-grid { grid-template-columns: 1fr 1fr; }
+  .testimonial-card.featured { grid-row: span 1; }
+}
+
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4,
   .grid-split, .grid-split-rev, .grid-half {
@@ -622,4 +918,19 @@
   .prob-grid, .res-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .quote-bar { padding: 48px 20px; }
+  
+  .trust-strip { padding: 20px; }
+  .trust-strip-inner { 
+    flex-direction: column; 
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .doelgroep-cards { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .prob-cta { 
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
