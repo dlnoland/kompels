@@ -1,0 +1,22 @@
+# Robots.txt for Kompels.com
+# https://www.kompels.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.kompels.com/sitemap.xml
+
+# Disallow admin and private directories (if any exist)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

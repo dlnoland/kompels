@@ -3,15 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Plan een verkennend gesprek met Kompels</title>
-  <meta name="description" content="In 45 minuten helderheid over waar gedrag uw ambities ondersteunt. Plan een strategisch verkennend gesprek met Henk of Kompels Westerveld.">
+  <title>Contact | Plan een Vrijblijvend Gesprek - Kompels</title>
+  <meta name="description" content="Plan een vrijblijvend strategisch gesprek met Henk of Gert Westerveld. Binnen 45 minuten helderheid over waar gedrag uw ambities ondersteunt of belemmert.">
+  <meta name="keywords" content="contact Kompels, MT coaching, leiderschapstraject, strategisch gesprek">
   <link rel="canonical" href="https://www.kompels.com/contact.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Kompels">
+  <meta property="og:description" content="Plan een vrijblijvend strategisch gesprek met Henk of Gert Westerveld.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kompels.com/contact.html">
+  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Schema.org ContactPage markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Kompels",
+    "description": "Plan een vrijblijvend strategisch gesprek met Kompels",
+    "url": "https://www.kompels.com/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Kompels",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+31624607580",
+          "email": "henk@kompels.nl",
+          "availableLanguage": ["Dutch", "English"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+31610415025",
+          "email": "gert@kompels.nl",
+          "availableLanguage": ["Dutch", "English"]
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <nav class="site-nav">
@@ -23,7 +62,7 @@
       <li><a href="workshops.html">Workshops</a></li>
       <li><a href="over-ons.html">Over ons</a></li>
       <li><a href="pages/inzichten.html">Inzichten</a></li>
-      <li><a href="contact.html" class="nav-cta">Plan een gesprek</a></li>
+      <li><a href="contact.html" class="nav-cta active">Plan een gesprek</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu openen"><span></span><span></span><span></span></button>
   </nav>
@@ -37,6 +76,7 @@
     <a href="contact.html" class="nav-cta">Plan een gesprek</a>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-circle hc1"></div>
     <div class="hero-inner-full">
@@ -46,6 +86,29 @@
     </div>
   </section>
 
+  <!-- TRUST STRIP -->
+  <div class="contact-trust-strip">
+    <div class="contact-trust-inner">
+      <div class="contact-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>Vrijblijvend gesprek</span>
+      </div>
+      <div class="contact-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Reactie binnen 1 werkdag</span>
+      </div>
+      <div class="contact-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>Gesprek met oprichters</span>
+      </div>
+      <div class="contact-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>45 minuten strategisch gesprek</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTACT SECTION -->
   <section class="section cream">
     <div class="s-inner">
       <div class="grid-half fade-in">
@@ -54,6 +117,8 @@
           <h2 style="font-size:clamp(24px,3vw,34px);margin-bottom:16px">Wij nemen binnen<br><em>één werkdag contact op.</em></h2>
           <p style="margin-bottom:14px">Een eerste gesprek is altijd vrijblijvend. We luisteren naar uw situatie, stellen de goede vragen en kijken eerlijk of er een match is tussen uw vraagstuk en onze aanpak.</p>
           <p style="margin-bottom:32px">Wij werken met leiderschapsteams in het onderwijs, de zorg, het publieke domein en bij ambitieuze MKB+-organisaties van 250 tot 2.500 medewerkers.</p>
+          
+          <!-- CONTACT PERSONS -->
           <div class="contact-person">
             <div class="contact-person-av">H</div>
             <div>
@@ -61,40 +126,145 @@
               <p>Mede-oprichter Kompels</p>
               <a href="mailto:henk@kompels.nl">henk@kompels.nl</a>
               <a href="tel:+31624607580">06 246 07 580</a>
-              <a class="dimmed" href="#">IJsbaanpad 62C, 1076 CW Amsterdam</a>
+              <span class="dimmed">IJsbaanpad 62C, 1076 CW Amsterdam</span>
             </div>
           </div>
           <div class="contact-person">
-            <div class="contact-person-av alt">K</div>
+            <div class="contact-person-av alt">G</div>
             <div>
-              <h4>Kompels Westerveld</h4>
+              <h4>Gert Westerveld</h4>
               <p>Mede-oprichter Kompels</p>
               <a href="mailto:gert@kompels.nl">gert@kompels.nl</a>
               <a href="tel:+31610415025">06 104 15 025</a>
-              <a class="dimmed" href="#">Keizerstraat 12, 8261 AN Kampen</a>
+              <span class="dimmed">Keizerstraat 12, 8261 AN Kampen</span>
+            </div>
+          </div>
+
+          <!-- QUICK CONTACT OPTIONS -->
+          <div class="quick-contact">
+            <h4>Liever direct contact?</h4>
+            <div class="quick-contact-btns">
+              <a href="tel:+31624607580" class="btn btn-outline">Bel Henk</a>
+              <a href="tel:+31610415025" class="btn btn-outline">Bel Gert</a>
             </div>
           </div>
         </div>
+
+        <!-- CONTACT FORM -->
         <div class="contact-form">
           <h3>Strategisch verkennend gesprek</h3>
           <p class="form-sub">Vul het formulier in en wij nemen binnen één werkdag contact op voor een gesprek van 45 minuten.</p>
           <form action="#" method="post">
             <div class="form-row">
-              <div class="form-group"><label>Voornaam</label><input type="text" name="voornaam" placeholder="Uw voornaam" required></div>
-              <div class="form-group"><label>Achternaam</label><input type="text" name="achternaam" placeholder="Uw achternaam" required></div>
+              <div class="form-group">
+                <label for="voornaam">Voornaam <span class="required">*</span></label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam" required>
+              </div>
+              <div class="form-group">
+                <label for="achternaam">Achternaam <span class="required">*</span></label>
+                <input type="text" id="achternaam" name="achternaam" placeholder="Uw achternaam" required>
+              </div>
             </div>
-            <div class="form-group"><label>Organisatie</label><input type="text" name="organisatie" placeholder="Naam van uw organisatie" required></div>
-            <div class="form-group"><label>Functie</label><input type="text" name="functie" placeholder="Uw functie of rol"></div>
-            <div class="form-group"><label>E-mailadres</label><input type="email" name="email" placeholder="uw@email.nl" required></div>
-            <div class="form-group"><label>Telefoonnummer</label><input type="tel" name="telefoon" placeholder="+31 (0)6..."></div>
-            <div class="form-group"><label>Uw vraagstuk</label><textarea name="vraagstuk" placeholder="Welke strategische doelen worden structureel niet gerealiseerd — en waar denkt u dat het aan ligt?"></textarea></div>
-            <button type="submit" class="btn btn-moss" style="width:100%;padding:13px;font-size:15px">Verstuur aanvraag</button>
+            <div class="form-group">
+              <label for="organisatie">Organisatie <span class="required">*</span></label>
+              <input type="text" id="organisatie" name="organisatie" placeholder="Naam van uw organisatie" required>
+            </div>
+            <div class="form-group">
+              <label for="functie">Functie</label>
+              <input type="text" id="functie" name="functie" placeholder="Uw functie of rol">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mailadres <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+            </div>
+            <div class="form-group">
+              <label for="telefoon">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="+31 (0)6...">
+            </div>
+            <div class="form-group">
+              <label for="interesse">Waar bent u in geïnteresseerd?</label>
+              <select id="interesse" name="interesse">
+                <option value="">Selecteer een optie</option>
+                <option value="mt-traject">MT-begeleidingstraject</option>
+                <option value="workshop">Workshop of masterclass</option>
+                <option value="analyse">Strategische gedragsanalyse</option>
+                <option value="coaching">Individuele coaching</option>
+                <option value="anders">Anders / weet ik nog niet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vraagstuk">Uw vraagstuk</label>
+              <textarea id="vraagstuk" name="vraagstuk" placeholder="Welke strategische doelen worden structureel niet gerealiseerd — en waar denkt u dat het aan ligt?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-moss btn-full">Verstuur aanvraag</button>
           </form>
-          <p class="form-note">Wij gaan zorgvuldig om met uw gegevens. Uw informatie wordt uitsluitend gebruikt voor het opvolgen van uw aanvraag.</p>
+          <p class="form-note">Wij gaan zorgvuldig om met uw gegevens. Uw informatie wordt uitsluitend gebruikt voor het opvolgen van uw aanvraag. <a href="#">Lees ons privacybeleid</a>.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section sand">
+    <div class="s-inner">
+      <div class="section-header centered fade-in">
+        <span class="s-tag">Wat kunt u verwachten</span>
+        <h2>Na uw aanvraag</h2>
+      </div>
+      <div class="expect-steps fade-in">
+        <div class="expect-step">
+          <div class="expect-num">1</div>
+          <h3>Reactie binnen 1 werkdag</h3>
+          <p>U ontvangt een bevestiging en wij nemen telefonisch contact op om een afspraak in te plannen.</p>
+        </div>
+        <div class="expect-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="expect-step">
+          <div class="expect-num">2</div>
+          <h3>Verkennend gesprek (45 min)</h3>
+          <p>Een strategisch gesprek met Henk of Gert over uw situatie, doelen en waar gedrag mogelijk in de weg zit.</p>
+        </div>
+        <div class="expect-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="expect-step">
+          <div class="expect-num">3</div>
+          <h3>Eerlijk advies</h3>
+          <p>U krijgt concrete inzichten en een eerlijk oordeel of Kompels de juiste partner is voor uw vraagstuk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section cream">
+    <div class="s-inner">
+      <div class="section-header centered fade-in">
+        <span class="s-tag">Veelgestelde vragen</span>
+        <h2>Praktische informatie</h2>
+      </div>
+      <div class="faq-grid fade-in">
+        <div class="faq-item">
+          <h3>Is het eerste gesprek echt vrijblijvend?</h3>
+          <p>Ja, volledig. We gebruiken het gesprek om te luisteren naar uw situatie en eerlijk te beoordelen of er een match is. Er volgt geen salesdruk.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Hoe lang duurt het voordat we kunnen starten?</h3>
+          <p>Na het verkennende gesprek kunnen we doorgaans binnen 2-3 weken starten met een analyse. De volledige planning bespreken we samen.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wat kost een traject bij Kompels?</h3>
+          <p>Dit hangt af van de scope en duur. We bespreken altijd eerst uw situatie en maken een passend voorstel. Prijzen variëren van workshops tot volledige trajecten.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Werken jullie ook buiten Nederland?</h3>
+          <p>Wij werken primair in Nederland en Vlaanderen. Voor internationale teams kunnen we maatwerkoplossingen bieden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-top">
@@ -106,12 +276,12 @@
           <li><a href="contact.html">Contact</a></li></ul></div>
         <div class="footer-col"><h5>Henk Westerveld</h5><ul>
           <li><a href="mailto:henk@kompels.nl">henk@kompels.nl</a></li><li><a href="tel:+31624607580">06 246 07 580</a></li>
-          <li><a class="dimmed" href="#">IJsbaanpad 62C, Amsterdam</a></li></ul></div>
-        <div class="footer-col"><h5>Kompels Westerveld</h5><ul>
+          <li><span class="dimmed">IJsbaanpad 62C, Amsterdam</span></li></ul></div>
+        <div class="footer-col"><h5>Gert Westerveld</h5><ul>
           <li><a href="mailto:gert@kompels.nl">gert@kompels.nl</a></li><li><a href="tel:+31610415025">06 104 15 025</a></li>
-          <li><a class="dimmed" href="#">Keizerstraat 12, Kampen</a></li>
-          <li style="margin-top:10px"><a href="https://www.linkedin.com/in/henk-westerveld-b6a9a214" target="_blank">LinkedIn Henk</a></li>
-          <li><a href="https://www.linkedin.com/in/gert-westerveld-13029813" target="_blank">LinkedIn Kompels</a></li></ul></div>
+          <li><span class="dimmed">Keizerstraat 12, Kampen</span></li>
+          <li style="margin-top:10px"><a href="https://www.linkedin.com/in/henk-westerveld-b6a9a214" target="_blank" rel="noopener">LinkedIn Henk</a></li>
+          <li><a href="https://www.linkedin.com/in/gert-westerveld-13029813" target="_blank" rel="noopener">LinkedIn Gert</a></li></ul></div>
       </div>
       <div class="footer-bottom"><span>© 2026 Kompels. Alle rechten voorbehouden.</span><div><a href="#">Privacy</a><a href="#">Voorwaarden</a></div></div>
     </div>
